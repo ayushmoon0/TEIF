@@ -1,4 +1,5 @@
 package day13;
+
 class Demo{
 	static double v = 0.5;
 	int base;
