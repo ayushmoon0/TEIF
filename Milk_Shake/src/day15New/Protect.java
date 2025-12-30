@@ -57,5 +57,5 @@ class AirForce extends SecurityForce{
 	}
 	void protect() {
 		System.out.println("Protect Airways");
-	}
+	} 
 }

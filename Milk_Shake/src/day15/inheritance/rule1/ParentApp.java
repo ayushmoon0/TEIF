@@ -14,7 +14,7 @@ class Parent {
 	void disp() {
 		System.out.println(a);
 		System.out.println(b);
-
+		
 	}
 
 }
