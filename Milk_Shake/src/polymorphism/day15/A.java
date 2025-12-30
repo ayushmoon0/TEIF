@@ -43,18 +43,17 @@ class TestingTrainer extends Trainer{
  */
 
 
-// Ex-2: Perfect Example of Polymorphism
+// Ex-2: Perfect Example for Polymorphism
 public class A{
 	public static void main(String[] args) {
 		
-		Trainer t;
-		t=new JavaTrainer();
-		t.teach();
-		t=new AptiTrainer();
-		t.teach();
-		t=new TestingTrainer();
-		t.teach();
+		duty(new JavaTrainer());
+		duty(new AptiTrainer());
+		duty(new TestingTrainer());
 		
+	}
+	static void duty(Trainer t) {
+		t.teach();
 	}
 }
 
