@@ -2,36 +2,25 @@ package day15New;
 
 public class Protect {
 public static void main(String[] args) {
-	Army a = new Army();
+
 	System.out.println("<<<<<<<<<<<<<<Army>>>>>>>>>>>>>>>>>>>");
-	a.job();
-	a.useTank();
-	a.protect();
+	duty(new Army());
 	System.out.println();
-	
-	Navy b = new Navy();
 	System.out.println("<<<<<<<<<<<<<<Navy>>>>>>>>>>>>>>>>>>>");
-	b.job();
-	b.useShips();
-	b.protect();
+	duty(new Navy());
 	System.out.println();
-	
-	AirForce c = new AirForce();
 	System.out.println("<<<<<<<<<<<<<<AirWays>>>>>>>>>>>>>>>>>>>");
-	c.job();
-	c.useJets();
-	c.protect();
+	duty( new AirForce());
+}
+static void duty(SecurityForce sf) {
+
+	sf.protect();
 }
 }
 
 
-class SecurityForce{
-	void job() {
-		System.out.println("This is my job..");
-	}
-	void protect() {
-		System.out.println("To protect Nation..");
-	}
+abstract class SecurityForce{
+ abstract void protect();
 }
 class Army extends SecurityForce{
 	void useTank() {

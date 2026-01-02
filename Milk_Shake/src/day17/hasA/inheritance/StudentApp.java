@@ -3,7 +3,6 @@ package day17.hasA.inheritance;
 public class StudentApp {
 	public static void main(String[] args) {
 		Student s = new Student();
-		System.out.println("Name from Humam: "+s.name);
 
 		System.out.println("*********************");
 		Bike b4=new Bike("Honda",100000);
@@ -13,24 +12,21 @@ public class StudentApp {
 		s.hasA(b5);
 		System.out.println("*********************");
 		System.out.println("---Brain---");
-		System.out.println(s.b1.getCells());
-		System.out.println(s.b1.getWeight());
+		System.out.println(s.b.getCells());
+		System.out.println(s.b.getWeight());
 		System.out.println("*********************");
 		System.out.println("---Heart---");
-		System.out.println(s.h1.getJob());
-		System.out.println(s.h1.getWeight());
+		System.out.println(s.h.getJob());
+		System.out.println(s.h.getWeight());
 	}
 }
-
-
 class Human{
-	String name="Zoro";
+	Heart h=new Heart("Pump Blood",3);
+	Brain b=new Brain(1000,1);
 	
 }
 
 class Student extends Human{
-	Brain b1=new Brain(10000,500);
-	Heart h1=new Heart("Pumping", 50);
 	void hasA(Bike b2) {
 		System.out.println("---Bike---");
 		System.out.println(b2.getBrand());
@@ -58,7 +54,6 @@ class Heart{
 		return weight;
 	}
 }
-
 class Brain{
 	int cells;
 	int weight;
@@ -90,7 +85,6 @@ class Bike{
 		return price;
 	}
 }
-
 class Book{
 	String name;
 	int price;
