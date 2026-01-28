@@ -69,6 +69,7 @@ class Cricket extends Data{
 
 
 public class Player{
+
 	public static void main(String[] args) {
 		Football f=new Football("Sunil", 30, "3 times", 35, "India", "India", 3, 4, 67);
 		
