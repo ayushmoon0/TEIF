@@ -1,4 +1,4 @@
-package day26.collection;
+package com.day26.collection;
 
 import java.util.LinkedList;
 
