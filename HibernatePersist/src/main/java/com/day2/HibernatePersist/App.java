@@ -4,7 +4,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-
 import com.entity.Students;
 
 /**
@@ -13,7 +12,7 @@ import com.entity.Students;
 public class App {
     public static void main(String[] args) {
     	
-        //loading the configuration
+    //loading the configuration
     	Configuration cg=new Configuration();
     	cg.configure("hibernate.cfg.xml");
     	
