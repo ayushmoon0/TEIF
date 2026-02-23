@@ -2,21 +2,21 @@ package com.day23.multiThreading;
 
 public class KodEditor1 {
 	public static void main(String[] args) throws InterruptedException {
-		for(;;) {
-			System.out.println("hello");
-		}
-//		System.out.println("Application started....");
-//		Thread t1= new Thread(new Typing1());
-//		Thread t2 = new Thread(new Saving1());
-//		Thread t3 = new Thread(new SpellCheck1());
-//		t1.start();
-//		t2.start();
-//		t3.start();
-//		
-//		t1.join();
-//		t2.join();
-//		t3.join();
-//		System.out.println("Application Terminated...");
+//		for(;;) {
+//			System.out.println("hello");
+//		}
+		System.out.println("Application started....");
+		Thread t1= new Thread(new Typing1());
+		Thread t2 = new Thread(new Saving1());
+		Thread t3 = new Thread(new SpellCheck1());
+		t1.start();
+		t2.start();
+		t3.start();
+		
+		t1.join();
+		t2.join();
+		t3.join();
+		System.out.println("Application Terminated...");
 	}
 }
 

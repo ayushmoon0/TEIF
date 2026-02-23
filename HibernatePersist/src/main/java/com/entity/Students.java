@@ -18,6 +18,10 @@ public class Students {
 	String email;
 	@Column
 	String phone_No;
+	public Students() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public Students(int id, String name, int age, int marks, String email, String phone_No) {
 		super();
 		this.id = id;

@@ -18,3 +18,6 @@ class Child extends Parent{
 		System.out.println("This is child method");
 	}
 }
+
+
+	
